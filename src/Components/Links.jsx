@@ -5,7 +5,11 @@ const Links = () => {
   return (
     <nav>
       <img src={logo} alt="room-logo" />
-      <img src={hamburger} alt="hamburger-menu-icon" />
+      <img
+        className="hide-in-desktop"
+        src={hamburger}
+        alt="hamburger-menu-icon"
+      />
       <ul>
         <li>Home</li>
         <li>Shop</li>
