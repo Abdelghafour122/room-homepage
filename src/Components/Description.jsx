@@ -1,9 +1,8 @@
 import React from "react";
 import arrow from "../Images/icon-arrow.svg";
 import ImgChanger from "./ImgChanger";
-import data from "../data";
 
-const Description = () => {
+const Description = ({ heading, paragraph }) => {
   return (
     <div className="description">
       <h1>Discover innovative ways to decorate</h1>

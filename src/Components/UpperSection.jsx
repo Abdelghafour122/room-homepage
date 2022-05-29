@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import data from "../data";
 import Description from "./Description";
 import LinksSection from "./LinksSection";
 
