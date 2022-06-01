@@ -1,0 +1,24 @@
+.description {
+  position: relative;
+  padding: 50px 60px;
+  text-align: left;
+  & h1 {
+    font-size: 40px;
+    color: $black;
+    font-weight: 500;
+  }
+  & p {
+    font-size: 15px;
+    color: $dark-gray;
+  }
+  & button.shop {
+    background-color: transparent;
+    border: none;
+    color: $very-dark-gray;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 7px;
+    gap: 30px;
+  }
+}

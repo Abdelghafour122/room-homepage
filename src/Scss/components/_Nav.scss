@@ -1,0 +1,15 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  gap: 35px;
+  & ul {
+    gap: 20px;
+    & li {
+      color: $white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+  }
+}

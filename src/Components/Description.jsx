@@ -4,14 +4,14 @@ import ImgChanger from "./ImgChanger";
 
 const Description = ({ heading, paragraph, onIncrement, onDecrement }) => {
   return (
-    <div className="description">
+    <div className="description df fd-c ai-fs">
       <h1>{heading}</h1>
       <p>{paragraph}</p>
-      <button>
+      <button className="shop df ai-c jc-c">
         Shop now
         <img src={arrow} alt="arrow-right" />
       </button>
-      <div className="imgchanger-holder hide-in-mobile">
+      <div className="imgchanger-holder df ai-c hide-in-mobile">
         <ImgChanger onIncrement={onIncrement} onDecrement={onDecrement} />
       </div>
     </div>

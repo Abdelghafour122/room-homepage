@@ -4,7 +4,7 @@ import Links from "./Links";
 
 const LinksSection = ({ image, mobileImg }) => {
   return (
-    <div className="links-section">
+    <div className="links-section df">
       <Links />
       <img className="hide-in-mobile" src={image} alt="hero-background" />
       <img
@@ -12,7 +12,7 @@ const LinksSection = ({ image, mobileImg }) => {
         src={mobileImg}
         alt="hero-background-mobile"
       />
-      <div className="imgchanger-holder hide-in-desktop">
+      <div className="imgchanger-holder df ai-c hide-in-desktop">
         <ImgChanger />
       </div>
     </div>
