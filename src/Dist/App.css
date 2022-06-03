@@ -191,6 +191,7 @@ nav ul li {
   cursor: pointer;
   font-size: 15px;
   position: relative;
+  text-transform: lowercase;
 }
 
 nav ul li::after {
@@ -279,5 +280,16 @@ nav ul li:hover::after {
 
 .links-section {
   position: relative;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: royalblue;
+  font-size: 17px;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 /*# sourceMappingURL=App.css.map */
