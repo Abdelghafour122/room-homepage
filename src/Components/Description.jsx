@@ -4,7 +4,7 @@ import ImgChanger from "./ImgChanger";
 
 const Description = ({ heading, paragraph, onIncrement, onDecrement }) => {
   return (
-    <div className="description df fd-c ai-fs">
+    <div className="description df fd-c ai-fs jc-c">
       <h1>{heading}</h1>
       <p>{paragraph}</p>
       <button className="shop df ai-c jc-c">

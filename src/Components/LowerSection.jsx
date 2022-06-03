@@ -8,7 +8,7 @@ const LowerSection = () => {
       <div className="left-img">
         <img src={leftImg} alt="about-dark" />
       </div>
-      <div className="center-text">
+      <div className="center-text df fd-c ai-fs jc-c">
         <h2>About our furniture</h2>
         <p>
           Our multifunctional collection blends design and function to suit your

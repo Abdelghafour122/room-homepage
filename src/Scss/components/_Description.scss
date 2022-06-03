@@ -2,14 +2,18 @@
   position: relative;
   padding: 50px 60px;
   text-align: left;
+  gap: 30px;
   & h1 {
     font-size: 40px;
     color: $black;
     font-weight: 500;
+    line-height: 0.8;
+    margin: 0;
   }
   & p {
     font-size: 15px;
     color: $dark-gray;
+    margin: 0;
   }
   & button.shop {
     background-color: transparent;
@@ -21,5 +25,9 @@
     letter-spacing: 7px;
     gap: 30px;
     cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }

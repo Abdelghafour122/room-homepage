@@ -142,9 +142,36 @@ ul {
 }
 
 .lower-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1fr 300px;
+      grid-template-columns: 300px 1fr 300px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.lower-section .center-text {
+  padding: 45px 35px;
+  text-align: left;
+}
+
+.lower-section .center-text h2 {
+  margin: 0 0 13px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.lower-section .center-text p {
+  color: #a1a1a1;
+  font-weight: 500;
+  margin: 0;
+}
+
+.lower-section .left-img img,
+.lower-section .right-img img {
+  width: 100%;
 }
 
 nav {
@@ -163,24 +190,48 @@ nav ul li {
   color: white;
   cursor: pointer;
   font-size: 15px;
+  position: relative;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  height: 2px;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 20px;
+  background-color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav ul li:hover::after {
+  width: 50%;
 }
 
 .imgchanger-holder {
-  background-color: black;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
   bottom: 0;
   left: 0;
-  gap: 15px;
 }
 
 .imgchanger-holder button {
   padding: 20px 25px;
-  background-color: transparent;
+  background-color: black;
   border: none;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.imgchanger-holder button:hover {
+  opacity: 0.7;
 }
 
 .imgchanger-holder button img {
@@ -191,17 +242,21 @@ nav ul li {
   position: relative;
   padding: 50px 60px;
   text-align: left;
+  gap: 30px;
 }
 
 .description h1 {
   font-size: 40px;
   color: black;
   font-weight: 500;
+  line-height: 0.8;
+  margin: 0;
 }
 
 .description p {
   font-size: 15px;
   color: #a1a1a1;
+  margin: 0;
 }
 
 .description button.shop {
@@ -214,6 +269,12 @@ nav ul li {
   letter-spacing: 7px;
   gap: 30px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.description button.shop:hover {
+  opacity: 0.7;
 }
 
 .links-section {
