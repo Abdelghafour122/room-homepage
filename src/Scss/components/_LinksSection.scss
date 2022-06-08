@@ -4,6 +4,15 @@
     flex-direction: column;
     width: 100%;
   }
+  & img.hide-in-mobile {
+    @include breakpoint-down(large) {
+      // width: 650px;
+      width: 606px;
+    }
+    @include breakpoint-down(medium) {
+      width: 500px;
+    }
+  }
   & .imgchanger-holder {
     left: calc(100% - 123.3px);
   }

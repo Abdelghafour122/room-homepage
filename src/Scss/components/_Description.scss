@@ -6,6 +6,10 @@
   @include breakpoint-down(small) {
     padding: 65px 35px;
   }
+  @include breakpoint-down(large) {
+    padding: 80px 40px;
+  }
+
   & h1 {
     font-size: 40px;
     color: $black;
