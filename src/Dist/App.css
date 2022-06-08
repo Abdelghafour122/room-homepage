@@ -162,9 +162,22 @@ ul {
       grid-template-rows: 1fr;
 }
 
+@media (max-width: 35.9375rem) {
+  .lower-section {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
 .lower-section .center-text {
   padding: 45px 35px;
   text-align: left;
+}
+
+@media (max-width: 35.9375rem) {
+  .lower-section .center-text {
+    padding: 65px 35px;
+  }
 }
 
 .lower-section .center-text h2 {
@@ -286,12 +299,24 @@ nav ul li:hover::after {
   gap: 30px;
 }
 
+@media (max-width: 35.9375rem) {
+  .description {
+    padding: 65px 35px;
+  }
+}
+
 .description h1 {
   font-size: 40px;
   color: black;
   font-weight: 500;
   line-height: 0.8;
   margin: 0;
+}
+
+@media (max-width: 35.9375rem) {
+  .description h1 {
+    font-size: 35px;
+  }
 }
 
 .description p {
@@ -312,6 +337,12 @@ nav ul li:hover::after {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 35.9375rem) {
+  .description button.shop {
+    margin-top: 20px;
+  }
 }
 
 .description button.shop:hover {
