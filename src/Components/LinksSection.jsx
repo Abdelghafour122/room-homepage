@@ -2,7 +2,7 @@ import React from "react";
 import ImgChanger from "./ImgChanger";
 import Links from "./Links";
 
-const LinksSection = ({ image, mobileImg }) => {
+const LinksSection = ({ image, mobileImg, onIncrement, onDecrement }) => {
   return (
     <div className="links-section df">
       <Links />
@@ -13,7 +13,7 @@ const LinksSection = ({ image, mobileImg }) => {
         alt="hero-background-mobile"
       />
       <div className="imgchanger-holder df ai-c hide-in-desktop">
-        <ImgChanger />
+        <ImgChanger onIncrement={onIncrement} onDecrement={onDecrement} />
       </div>
     </div>
   );

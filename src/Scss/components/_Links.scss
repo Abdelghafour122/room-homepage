@@ -4,8 +4,22 @@ nav {
   left: 0;
   padding: 50px;
   gap: 35px;
+  width: 100%;
+  @include breakpoint-down(small) {
+    justify-content: center;
+  }
+  & img:nth-of-type(2) {
+    position: absolute;
+    left: 50px;
+    cursor: pointer;
+  }
   & ul {
     gap: 20px;
+    display: flex;
+    align-items: center;
+    @include breakpoint-down(small) {
+      display: none;
+    }
     & li {
       color: $white;
       cursor: pointer;

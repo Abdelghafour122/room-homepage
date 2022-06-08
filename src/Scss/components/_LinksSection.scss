@@ -1,3 +1,10 @@
 .links-section {
   position: relative;
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    width: 100%;
+  }
+  & .imgchanger-holder {
+    left: calc(100% - 123.3px);
+  }
 }

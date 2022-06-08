@@ -141,6 +141,18 @@ ul {
   display: flex;
 }
 
+@media (max-width: 35.9375rem) {
+  .upper-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .lower-section {
   display: -ms-grid;
   display: grid;
@@ -181,10 +193,37 @@ nav {
   left: 0;
   padding: 50px;
   gap: 35px;
+  width: 100%;
+}
+
+@media (max-width: 35.9375rem) {
+  nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+nav img:nth-of-type(2) {
+  position: absolute;
+  left: 50px;
+  cursor: pointer;
 }
 
 nav ul {
   gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 35.9375rem) {
+  nav ul {
+    display: none;
+  }
 }
 
 nav ul li {
@@ -281,6 +320,20 @@ nav ul li:hover::after {
 
 .links-section {
   position: relative;
+}
+
+@media (max-width: 35.9375rem) {
+  .links-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+.links-section .imgchanger-holder {
+  left: calc(100% - 123.3px);
 }
 
 footer {

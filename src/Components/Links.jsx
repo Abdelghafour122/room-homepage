@@ -10,7 +10,7 @@ const Links = () => {
         src={hamburger}
         alt="hamburger-menu-icon"
       />
-      <ul className="df ai-c">
+      <ul>
         <li>Home</li>
         <li>Shop</li>
         <li>About</li>

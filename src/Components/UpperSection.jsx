@@ -34,7 +34,12 @@ const UpperSection = () => {
 
   return (
     <section className="upper-section">
-      <LinksSection image={image} mobileImg={mobileImg} />
+      <LinksSection
+        image={image}
+        mobileImg={mobileImg}
+        onDecrement={handleDecrement}
+        onIncrement={handleIncrement}
+      />
       <Description
         onDecrement={handleDecrement}
         onIncrement={handleIncrement}
