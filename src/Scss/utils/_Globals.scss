@@ -49,38 +49,6 @@ ul {
   }
 }
 
-.container {
-  @include breakpoint-down(small) {
-    max-width: 30rem;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  @include breakpoint-up(small) {
-    max-width: 40rem;
-    width: 90vw;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  @include breakpoint-up(medium) {
-    max-width: 54rem;
-    width: 90vw;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  @include breakpoint-up(large) {
-    max-width: 68rem;
-    width: 90vw;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-  @include breakpoint-up(xlarge) {
-    max-width: 76rem;
-    width: 90vw;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-}
-
 .hide-in-desktop {
   @include breakpoint-up(small) {
     display: none;
