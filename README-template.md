@@ -33,4 +33,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Abdelghafour122](https://www.frontendmentor.io/profile/Abdelghafour122)
-- Twitter - [@Abdelghafour_1](https://www.twitter.com/Abdelghafour_1)
+- Twitter - [@Abdelghafour1\_](https://www.twitter.com/Abdelghafour_1)
