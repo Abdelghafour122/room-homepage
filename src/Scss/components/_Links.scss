@@ -19,13 +19,12 @@ nav {
     display: flex;
     align-items: center;
     @include breakpoint-down(small) {
-      // display: none;
-      // display: none;
       position: absolute;
       height: 100%;
       width: 100%;
       background-color: $white;
-      justify-content: center;
+      justify-content: flex-end;
+      padding: 50px;
     }
     & li {
       color: $white;
@@ -51,6 +50,11 @@ nav {
       &:hover::after {
         width: 50%;
       }
+    }
+  }
+  & ul.mobile {
+    @include breakpoint-up(small) {
+      display: none;
     }
   }
 }

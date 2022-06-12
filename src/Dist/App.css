@@ -149,6 +149,12 @@ ul {
           animation: hide-slow-ani 0.4s ease-in-out forwards;
 }
 
+.end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 @-webkit-keyframes show-slow-ani {
   from {
     visibility: visible;
@@ -315,9 +321,10 @@ nav ul {
     height: 100%;
     width: 100%;
     background-color: white;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 50px;
   }
 }
 
@@ -352,6 +359,12 @@ nav ul li::after {
 
 nav ul li:hover::after {
   width: 50%;
+}
+
+@media (min-width: 36rem) {
+  nav ul.mobile {
+    display: none;
+  }
 }
 
 .imgchanger-holder {

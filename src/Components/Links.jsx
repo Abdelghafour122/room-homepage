@@ -10,7 +10,8 @@ const Links = () => {
   };
 
   return (
-    <nav className="df ai-c">
+    //  <nav className="df ai-c jc-c">
+    <nav className={`df ai-c ${imageSrc === close && "jc-c"}`}>
       <img src={logo} alt="room-logo" />
       <img
         className="hide-in-desktop"
@@ -18,7 +19,15 @@ const Links = () => {
         alt="menu-icon"
         onClick={handleClick}
       />
-      <ul className={`${imageSrc === close ? "show-slow" : "hide-slow"} `}>
+      <ul className="hide-in-mobile">
+        <li>Home</li>
+        <li>Shop</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <ul
+        className={`mobile ${imageSrc === close ? "show-slow" : "hide-slow"} `}
+      >
         <li>Home</li>
         <li>Shop</li>
         <li>About</li>
