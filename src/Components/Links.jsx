@@ -10,7 +10,6 @@ const Links = () => {
   };
 
   return (
-    //  <nav className="df ai-c jc-c">
     <nav className={`df ai-c ${imageSrc === close && "jc-c"}`}>
       <img src={logo} alt="room-logo" />
       <img

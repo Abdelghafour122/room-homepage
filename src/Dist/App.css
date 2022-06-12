@@ -149,12 +149,6 @@ ul {
           animation: hide-slow-ani 0.4s ease-in-out forwards;
 }
 
-.end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 @-webkit-keyframes show-slow-ani {
   from {
     visibility: visible;

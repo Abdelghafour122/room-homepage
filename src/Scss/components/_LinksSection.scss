@@ -6,7 +6,6 @@
   }
   & img.hide-in-mobile {
     @include breakpoint-down(large) {
-      // width: 650px;
       width: 606px;
     }
     @include breakpoint-down(medium) {

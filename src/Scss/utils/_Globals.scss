@@ -108,10 +108,6 @@ ul {
   animation: hide-slow-ani 0.4s ease-in-out forwards;
 }
 
-.end {
-  justify-content: flex-end;
-}
-
 @keyframes show-slow-ani {
   from {
     visibility: visible;
