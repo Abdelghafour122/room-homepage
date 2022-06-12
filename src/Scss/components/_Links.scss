@@ -12,13 +12,19 @@ nav {
     position: absolute;
     left: 50px;
     cursor: pointer;
+    z-index: 99999;
   }
   & ul {
     gap: 20px;
     display: flex;
     align-items: center;
     @include breakpoint-down(small) {
-      display: none;
+      // display: none;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: $white;
+      justify-content: center;
     }
     & li {
       color: $white;
@@ -26,6 +32,9 @@ nav {
       font-size: 15px;
       position: relative;
       text-transform: lowercase;
+      @include breakpoint-down(small) {
+        color: $black;
+      }
       &::after {
         content: "";
         position: absolute;

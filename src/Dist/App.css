@@ -135,6 +135,70 @@ ul {
   overflow: hidden;
 }
 
+.hide {
+  display: none;
+}
+
+.show-slow {
+  -webkit-animation: show-slow-ani 0.4s ease-in-out forwards;
+          animation: show-slow-ani 0.4s ease-in-out forwards;
+}
+
+.hide-slow {
+  -webkit-animation: hide-slow-ani 0.4s ease-in-out forwards;
+          animation: hide-slow-ani 0.4s ease-in-out forwards;
+}
+
+@-webkit-keyframes show-slow-ani {
+  from {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes show-slow-ani {
+  from {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes hide-slow-ani {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes hide-slow-ani {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
 .upper-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,6 +296,7 @@ nav img:nth-of-type(2) {
   position: absolute;
   left: 50px;
   cursor: pointer;
+  z-index: 99999;
 }
 
 nav ul {
@@ -246,7 +311,13 @@ nav ul {
 
 @media (max-width: 35.9375rem) {
   nav ul {
-    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -256,6 +327,12 @@ nav ul li {
   font-size: 15px;
   position: relative;
   text-transform: lowercase;
+}
+
+@media (max-width: 35.9375rem) {
+  nav ul li {
+    color: black;
+  }
 }
 
 nav ul li::after {
